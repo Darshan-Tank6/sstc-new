@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+:root {
+  --orangeColor: #d87d4a;
+  --darkBlack: #101010;
+  --grayColor: #f1f1f1;
+  --lightGray: #fafafa;
+  --lightOrange: #fbaf85;
+  --white-color: #ffffff;
+  --pureBlack: #000000;
+}
+
+html {
+  font-size: 62.7%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--lightGray);
+}
+
+/* ====================Utalities Classes===================== */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: var(--lightGray);
+  letter-spacing: 2.5px;
+  opacity: 0.5;
+  margin: 1rem 0;
+  line-height: 2;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  padding: 1.2rem 2rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  margin: 2rem 0;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.primaryBtn {
+  background-color: var(--orangeColor);
+  color: var(--white-color);
+}
+
+.secondaryBtn {
+  background-color: var(--darkBlack);
+  color: var(--white-color);
+}
+
+.btnTransparent {
+  border: 1px solid var(--darkBlack);
+  background-color: transparent;
+  color: var(--pureBlack);
+  font-weight: 800;
+}
+
+.btn:active,
+.primaryBtn:active,
+.secondaryBtn:active {
+  transform: scale(0.98);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/* ====================Navbar ===================== */
+header {
+  background: url("../assets/home/desktop/image-hero.jpg") no-repeat center
+    center/cover;
+  min-height: 100vh;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+  position: relative;
+}
+
+header .navbar::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--grayColor);
+  bottom: 0;
+  opacity: 0.5;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+header .navbar ul li {
+  padding: 0 3rem;
+}
+
+header .navbar ul li a {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+header .navbar ul li a:hover {
+  color: var(--orangeColor);
+}
+
+.cart {
+  cursor: pointer;
+}
+
+/* ====================Showcase ===================== */
+.showcase_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85vh;
+  width: 50%;
+}
+
+.showcase_content h2 {
+  font-size: 8rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.textContent p:first-child {
+  color: var(--lightGray);
+  font-size: 2rem;
+  opacity: 0.5;
+  letter-spacing: 1.5rem;
+}
+
+/* ====================Product Category Cards ===================== */
+#products {
+  margin: 10rem 0;
+}
+
+.cardheader img {
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  width: 80%;
+  transform: translateY(-40%);
+}
+
+.product_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12rem;
+  gap: 6rem;
+}
+
+.cards {
+  background-color: var(--grayColor);
+  border-radius: 10px;
+  width: 350px;
+  height: 204px;
+}
+
+.cardbody {
+  text-align: center;
+  transform: translateY(-150px);
+}
+
+.cardfooter a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--darkBlack);
+}
+
+.cardfooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-140px);
+}
+
+.cardfooter p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 1rem;
+}
+
+/* ====================Zx9 Product ===================== */
+#zx9 {
+  margin: 10rem 0;
+}
+
+.orangeBg {
+  border-radius: 10px;
+  padding-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--orangeColor);
+}
+
+.imgContent img {
+  object-fit: cover;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-15px);
+}
+
+#zx9 .textContent h2 {
+  font-size: 6rem;
+  color: var(--white-color);
+}
+
+#zx9 .textContent p {
+  color: var(--white-color);
+}
+
+#zx9 .textContent a {
+  color: var(--white-color);
+}
+
+/* ====================Zx7 Product ===================== */
+#zx7 {
+  padding: 4rem 0;
+}
+
+#zx7 .greyBg {
+  width: 100%;
+  position: relative;
+}
+
+#zx7 .imgContent img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(15px);
+  border-radius: 10px;
+}
+
+#zx7 .imgContent {
+  width: 100%;
+}
+
+#zx7 .textContent {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+#zx7 .textContent h2 {
+  color: var(--darkBlack);
+  font-size: 4.5rem;
+}
+
+/* ====================Earphone Product ===================== */
+#airphone {
+  padding: 4rem 0;
+}
+
+#airphone img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  border-radius: 10px;
+}
+
+#airphone a {
+  color: var(--pureBlack);
+}
+
+.air_phone_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#airphone .rightSide {
+  background-color: var(--grayColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+#airphone .rightSide h2 {
+  font-size: 4rem;
+}
+
+/* ==================== User Demo ===================== */
+#userDemo {
+  padding: 4rem 0;
+}
+
+#userDemo .userContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#userDemo .leftSide {
+  width: 50%;
+}
+
+#userDemo .leftSide h2 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#userDemo .leftSide span {
+  color: var(--orangeColor);
+}
+
+#userDemo .leftSide p {
+  font-size: 1.7rem;
+  padding: 2rem 0;
+  line-height: 1.7;
+  letter-spacing: 2px;
+}
+
+#userDemo .rightSide img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ==================== Footer ===================== */
+footer {
+  background-color: var(--darkBlack);
+  padding-top: 8rem;
+  margin-top: 8rem;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+}
+
+footer nav ul li {
+  padding: 0 3rem;
+}
+
+footer nav ul li a {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.footerContent p {
+  width: 50%;
+  padding: 2rem 0;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social_icons .icons img {
+  margin: 0 2rem;
+  cursor: pointer;
+}
